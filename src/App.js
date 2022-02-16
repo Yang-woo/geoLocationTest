@@ -8,10 +8,10 @@ function App() {
       if (navigator.geolocation) {
         // GPS를 지원하면
         navigator.geolocation.getCurrentPosition(
-          function (position) {
+          (position) => {
             alert(position.coords.latitude + " " + position.coords.longitude);
           },
-          function (error) {
+          (error) => {
             console.error(error);
           },
           {
